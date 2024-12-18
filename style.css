@@ -1,0 +1,93 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Couleur de fond */
+    padding: 10px 0; /* Espacement vertical */
+    position: fixed; /* Fixe la navbar en haut de la page */
+    top: 0;
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1000; /* Place la navbar au-dessus des autres éléments */
+}
+
+.nav-links {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Affichage en ligne */
+    justify-content: center; /* Centrage horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; /* Espacement entre les liens */
+}
+
+.nav-links a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Animation de la couleur */
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Couleur au survol */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #e45dff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #e45dff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #94bcca;
+}
