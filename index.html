@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar et Formulaire</title>
-    <link rel="stylesheet" href="navbar.css"> <!-- Lien vers le CSS externe -->
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers le CSS formulaire -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Léna Marino</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#biographie">Biographi</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#photOs">Mes photos</a></li>
-        </ul>
-    </nav>
 
-    <!-- Section principale -->
-    <main>
-        <!-- Section Contact -->
-        <section id="contact" class="form-container">
-            <h2>Me contacter</h2>
-            <form>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" placeholder="Votre nom" required aria-required="true">
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Léna Marino</div>
+    <ul class="nav-links">
+      <li><a href="#biographie">Biographie</a></li>
+      <li><a href="#competences">Mes Compétences</a></li>
+      <li><a href="#projets">Mes Projets</a></li>
+      <li><a href="#photos">Mes Photos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Léna Marino</h1>
+    <p class="description-intro">Étudiante en première année de Métiers du Multimédia et de l'Internet<p>
+  </section>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="Votre email" required aria-required="true">
+  <!-- Sections -->
+  <section id="biographie">
+    <h2>Biographie</h2>
+    <p>Je détiens un Baccalauréat général, mes spécialités étaient Arts plastiques et LLCE.
+      Passionnée de photographie et d'art, j'aime capturer et créer des visuels uniques.
+      J'ai pour projet de travailler en tant que Community Manager où je pourrais allier créativité et communication.
+      Découvrez mes projets et contactez-moi pour en savoir plus !
+    </p>
+  </section>
 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" placeholder="Votre message" required aria-required="true"></textarea>
+  <section id="competences">
+    <h2>Mes Compétences</h2>
+  </section>
+  <div class="competences-container">
+    
+    <div class="progress-bar-container">
+        <div class="progress">
+            <span class="progress-title">Photoshop</span>
+            <div class="progress-bar">
+                <div class="progress-fill photoshop"></div>
+            </div>
+        </div>
+        <div class="progress">
+            <span class="progress-title">Illustrator</span>
+            <div class="progress-bar">
+                <div class="progress-fill illustrator"></div>
+            </div>
+        </div>
+        <div class="progress">
+            <span class="progress-title">Html/Css</span>
+            <div class="progress-bar">
+                <div class="progress-fill vscode"></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <p></p>
+    
+  </section>
 
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+  <section id="photos">
+    <h2>Mes Photos</h2>
+    <p></p>
+  </section>
 
-        <!-- Autres sections placeholder -->
-        <section id="biographie">
-            <h2>Biographie</h2>
-            <p>Votre contenu ici...</p>
-        </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="form-container">
+      <form action="#" method="POST">
+          <h1>Contactez-moi</h1>
+          
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
 
-        <section id="competences">
-            <h2>Compétences</h2>
-            <p>Votre contenu ici...</p>
-        </section>
+          <label for="prénom">Prénom</label>
+          <input type="text" id="prénom" name="prénom" placeholder="Votre prénom" required>
+  
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+  
+          <button type="submit">Envoyer</button>
+      </form>
+  </div>
+  </section>
 
-        <section id="projets">
-            <h2>Projets</h2>
-            <p>Votre contenu ici...</p>
-        </section>
-
-        <section id="photos">
-            <h2>Mes photos</h2>
-            <p>Votre contenu ici...</p>
-        </section>
-    </main>
+  <footer>
+    <p>&copy; 2025 Léna Marino. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
