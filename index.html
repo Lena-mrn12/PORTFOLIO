@@ -1,105 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Léna Marino</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">Léna Marino</div>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#compétences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Léna Marino</div>
-    <ul class="nav-links">
-      <li><a href="#biographie">Biographie</a></li>
-      <li><a href="#competences">Mes Compétences</a></li>
-      <li><a href="#projets">Mes Projets</a></li>
-      <li><a href="#photos">Mes Photos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Léna Marino</h1>
-    <p class="description-intro">Étudiante en première année de Métiers du Multimédia et de l'Internet<p>
-  </section>
+    <div id="landing">
+        <div class="svg-wrapper">
+          <a id="jump" href="#portfolio">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="60" width="320" />
+            </svg>
+            <div class="text">Léna Marino</div>
+          </a>
+        </div>
+      </div>
+      
 
-  <!-- Sections -->
-  <section id="biographie">
-    <h2>Biographie</h2>
-    <p>Je détiens un Baccalauréat général, mes spécialités étaient Arts plastiques et LLCE.
-      Passionnée de photographie et d'art, j'aime capturer et créer des visuels uniques.
-      J'ai pour projet de travailler en tant que Community Manager où je pourrais allier créativité et communication.
-      Découvrez mes projets et contactez-moi pour en savoir plus !
-    </p>
-  </section>
+    <section id="about">
+        <h1>À PROPOS</h1>
+        <p>Etudiante en première année de BUT Métiers du Multimédia et de l'Internet. Je détiens un Baccalauréat général, mes spécialités étaient Arts plastiques et LLCE. Passionnée de photographie et d'art, j'aime capturer et créer des visuels uniques.
+        </p>
+    </section>
 
-  <section id="competences">
-    <h2>Mes Compétences</h2>
-  </section>
-  <div class="competences-container">
+    <section id="projects">
+        <h1>MES PROJETS</h1>
+        <div class="project-list">
+            <!-- Exemple de projet -->
+            <div class="project">
+                <img src="cgw.png.PNG" alt="Projet 1">
+                <h2>Affiche Corsica Games Week</h2>
+
+            </div>
+            <div class="project">
+                <img src="affichebrocante.PNG" alt="Projet 2">
+                <h2>Affiche Brocante</h2>
+            </div>
+        </div>
+    </section>
+
     
-    <div class="progress-bar-container">
-        <div class="progress">
-            <span class="progress-title">Photoshop</span>
-            <div class="progress-bar">
-                <div class="progress-fill photoshop"></div>
+    <section id="photos">
+        <h1>MES PHOTOS</h1>
+        <div class="project-list">
+            <!-- Exemple de projet -->
+            <div class="photos">
+                <img src="bowling.JPG" alt="Photos 1">
+             
             </div>
-        </div>
-        <div class="progress">
-            <span class="progress-title">Illustrator</span>
-            <div class="progress-bar">
-                <div class="progress-fill illustrator"></div>
+            <div class="photos">
+                <img src="esso.jpg" alt="Photos 2">
+                
             </div>
-        </div>
-        <div class="progress">
-            <span class="progress-title">Html/Css</span>
-            <div class="progress-bar">
-                <div class="progress-fill vscode"></div>
+            <div class="photos">
+                <img src="plage.jpg" alt="Photos 3">
+                
             </div>
+
         </div>
-    </div>
-</div>
-  
-  <section id="projets">
-    <h2>Mes Projets</h2>
-    <p></p>
+    <section>
+
+        <section id="compétences">
+            <h1>MES COMPETENCES</h1>
+            <div class="project-list">
+                <div class="skill-container">
+                    <img src="html.svg" class="skill-logo" alt="HTML">
+                    <div class="skill-bar">
+                      <div class="label">HTML</div>
+                      <div class="bar">
+                        <div class="progress" style="--percent: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill-container">
+                    <img src="css3.svg" class="skill-logo" alt="CSS">
+                    <div class="skill-bar">
+                      <div class="label">CSS</div>
+                      <div class="bar">
+                        <div class="progress" style="--percent: 60%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill-container">
+                    <img src="adobe-photoshop.svg" class="skill-logo" alt="Photoshop">
+                    <div class="skill-bar">
+                      <div class="label">Photoshop</div>
+                      <div class="bar">
+                        <div class="progress" style="--percent: 50%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill-container">
+                    <img src="adobe-illustrator-svgrepo-com.svg" class="skill-logo" alt="Illustrator">
+                    <div class="skill-bar">
+                      <div class="label">Illustrator</div>
+                      <div class="bar">
+                        <div class="progress" style="--percent: 75%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill-container">
+                    <img src="adobe-premiere-pro.svg" class="skill-logo" alt="Premiere Pro">
+                    <div class="skill-bar">
+                      <div class="label">Premiere Pro</div>
+                      <div class="bar">
+                        <div class="progress" style="--percent: 20%;"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+           
+
+
+
+
+        </section>
+
+    <section id="contact">
+        <h1>CONTACTEZ-MOI</h1>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Prénom</label>
+                <input type="text" id="Prénom" name="Prénom" placeholder="Votre prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <div class="wrap">
+                <button class="button">Envoyer</button>
+              </div>
+        </form>
+    </section>
     
-  </section>
 
-  <section id="photos">
-    <h2>Mes Photos</h2>
-    <p></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="form-container">
-      <form action="#" method="POST">
-          <h1>Contactez-moi</h1>
-          
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom" required>
-
-          <label for="prénom">Prénom</label>
-          <input type="text" id="prénom" name="prénom" placeholder="Votre prénom" required>
-  
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Votre email" required>
-  
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
-  
-          <button type="submit">Envoyer</button>
-      </form>
-  </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Léna Marino. Tous droits réservés.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Léna Marino</p>
+    </footer>
 </body>
 </html>
+
